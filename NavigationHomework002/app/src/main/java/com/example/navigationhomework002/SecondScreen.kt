@@ -9,10 +9,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 
 @Composable
-fun SecondScreen( bdate:Int,name:String){
+fun SecondScreen( bdate:String,name:String){
     Column(modifier = Modifier.fillMaxSize(), verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally) {
-        Text(text = "wellcome ${name} your age is ${age(bdate)}")
+        Text(text = "wellcome ${name} your age is ${age(bdate.toInt())}")
 
     }
 }
